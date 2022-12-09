@@ -1,0 +1,18 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("Digite um número: ");
+        int numero = 0, resultado = 1;
+        numero = int.Parse(Console.ReadLine());
+        Console.Write("\n{0}!=1", numero);
+        for (int x = 2; x <= numero; x++)
+        {
+            resultado = resultado * x;
+            Console.Write("*{0}", x);
+        }
+        Console.WriteLine("={0}", resultado);
+    }
+}
