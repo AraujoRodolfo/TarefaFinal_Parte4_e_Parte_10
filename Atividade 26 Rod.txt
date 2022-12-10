@@ -1,0 +1,32 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int n1, n2;
+        Console.WriteLine("Escreva o 1° número");
+        n1 = int.Parse(Console.ReadLine());
+        Console.WriteLine("Escreva o 2° número");
+        n2 = int.Parse(Console.ReadLine());
+        Impar(n1, n2);
+    }
+    static void Impar(int num1, int num2)
+    {
+        int i;
+
+        for (i = num1; i <= num2; i++)
+        {
+
+            if (i % 2 == 0)
+            {
+
+            }
+            else
+            {
+                Console.WriteLine("{0} é impar", i);
+            }
+        }
+        Console.ReadKey();
+    }
+}
