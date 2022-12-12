@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+         static void Main(string[] args)
+        {
+            string n1, n2;
+            Console.Write("Nome da 1º pessoa:");
+            n1 = Console.ReadLine();
+            Console.Write("Nome da 2º pessoa:");
+            n2 = Console.ReadLine();
+
+            string maiorn1 = n1.ToUpper();
+            string maiorn2 = n2.ToUpper();
+            Console.WriteLine("\nNOMES EM MAIÚSCULO \n1º nome: {0}\n2º nome: {1}", maiorn1, maiorn2);
+
+            Console.WriteLine("\nQUANTIDADE DE CARACTERES EM CADA NOME \n1º nome: {0} = {1}\n2º nome: {2} = {3}", n1, n1.Length, n2, n2.Length);
+
+            string Removenome1 = n1.Remove(3);
+            string Removenome2 = n2.Remove(3);
+            Console.WriteLine("\nOS TRÊS PRIMEIROS CARACTERES DE CADA NOME:\n1º nome:{0}\n2º nome{1}", Removenome1, Removenome2);
+            Console.ReadKey();
+        }
+    }
+}
