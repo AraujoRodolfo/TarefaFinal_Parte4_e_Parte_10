@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("Digite algum número: ");
+        int num = 0, resultado = 1;
+        num = int.Parse(Console.ReadLine());
+        Console.Write("\n{0}!=1", num);
+        for (int x = 2; x <= num; x++)
+        {
+            resultado *= x;
+            Console.Write("*{0}", x);
+        }
+        Console.WriteLine("={0}", resultado);
+        Console.ReadKey();
+    }
+    
+}
+}
+          
